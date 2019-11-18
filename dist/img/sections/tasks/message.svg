@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="28.566" viewBox="0 0 33 28.566">
+  <g id="Message" transform="translate(-1224 -65)">
+    <path id="message-2" data-name="message" d="M29.86,21.407a2.818,2.818,0,0,1-2.818,2.818H10.136L4.5,29.86V7.318A2.818,2.818,0,0,1,7.318,4.5H27.042A2.818,2.818,0,0,1,29.86,7.318Z" transform="translate(1220.5 62.706)" fill="none" stroke="#bccbd9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="7" cy="7" r="7" transform="translate(1243 65)" fill="#ff4f33"/>
+    <text id="_1" data-name="1" transform="translate(1247 76)" fill="#fff" font-size="11" font-family="SFProDisplay-Regular, SF Pro Display"><tspan x="0" y="0">1</tspan></text>
+  </g>
+</svg>

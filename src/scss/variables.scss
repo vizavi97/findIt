@@ -1,0 +1,84 @@
+//Rulse for tags
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+button {
+  z-index: 0;
+}
+input {
+  z-index: 0;
+}
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: left;
+  font-size: 52px;
+  font-weight: bold;
+  color: #1A3E74;
+  @include xs-block(){
+    font-size: 40px;
+  }
+}
+h2 {
+  font-weight: bold;
+  font-size: 46px;
+  color: #1A3E74;
+  @include xs-block(){
+    font-size: 32px;
+  }
+}
+h3 {
+  font-weight: bold;
+  font-size: 29px;
+  color: #8FCC48;
+  }
+h4 {
+  font-size: 22px;
+  color: #7C9CBB;
+  opacity: 1;
+}
+//Colors
+
+//background
+.green {
+  background: #8FCC48;
+}
+.blue {
+  background: #39BFFB;
+}
+.yellow {
+  background: #FEB627;
+}
+
+//overflow
+
+.overflow {
+  overflow: hidden;
+}
+

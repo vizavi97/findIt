@@ -1,0 +1,133 @@
+<% var data = {
+  title: "Create Task",
+  author: "Tim"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="bg-container">
+  <input type="checkbox" id="bg"/>
+  <label class="bg-btn" for="bg"></label>
+</div>
+<section class="create-task">
+  <div>
+    <div class="create-task-container">
+      <h3>Выберите категорию задания</h3>
+      <ul class="create-task-elements">
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/courier.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Курьерские услуги</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Услуги пешего курьера</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Услуги курьера на легковом авто</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Купить и доставить</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Срочная доставка</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка продуктов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка еды из ресторанов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Курьер на день</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Другая посылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/wrench.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Ремонт и строительство</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Мастер на час</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Ремонт под ключ</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Сантехнические работы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Электромонтажные работы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Отделочные работы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Потолки</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Полы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Плиточные работы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Сборка и ремонт мебели</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Установка и ремонт дверей, замков</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Окна, остекление, балконы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Кровельные и фасадные работы</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Что-то другое</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/delivery-truck.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Курьерские услуги</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Услуги пешего курьера</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Услуги курьера на легковом авто</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Купить и доставить</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Срочная доставка</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка продуктов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка еды из ресторанов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Курьер на день</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Другая посылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/dust.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Курьерские услуги</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Услуги пешего курьера</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Услуги курьера на легковом авто</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Купить и доставить</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Срочная доставка</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка продуктов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка еды из ресторанов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Курьер на день</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Другая посылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/cms.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Курьерские услуги</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Услуги пешего курьера</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Услуги курьера на легковом авто</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Купить и доставить</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Срочная доставка</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка продуктов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка еды из ресторанов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Курьер на день</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Другая посылка</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="create-task-items">
+          <div class="create-task-item-img">
+            <img src="../../img/sections/tasks/photo-camera.svg" alt="img"/>
+          </div>
+          <div class="create-task-inner">
+            <h6>Курьерские услуги</h6>
+            <ul class="create-task-inner-items">
+              <li class="create-task-inner-item"><a href="javascript:">Услуги пешего курьера</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Услуги курьера на легковом авто</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Купить и доставить</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Срочная доставка</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка продуктов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Доставка еды из ресторанов</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Курьер на день</a></li>
+              <li class="create-task-inner-item"><a href="javascript:">Другая посылка</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
