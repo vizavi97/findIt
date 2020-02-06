@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+
+    <title>executor</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="header border-bottom">
+          <div class="header-logo">
+            <a href="/"> <b>Find</b> <span>it</span> </a>
+          </div>
+          <ul class="header-links">
+            <li class="header-link">
+              <a href="javascript:">Создать задание</a>
+            </li>
+            <li class="header-link">
+              <a href="javascript:">Найти задание</a>
+            </li>
+            <li class="header-link">
+              <a href="javascript:">Исполнители</a>
+            </li>
+            <li class="header-link">
+              <a href="javascript:">Мои заказы</a>
+            </li>
+          </ul>
+          <ul class="header-info-items">
+            <li class="header-info-item">
+              <a href="javascript:">
+                <img src="../../img/message.svg" alt="" />
+              </a>
+            </li>
+            <li class="header-info-item">
+              <a href="javascript:">
+                <img src="../../img/Notification.svg" alt="" />
+              </a>
+            </li>
+            <li class="header-info-item profile">
+              <a href="javascript:">
+                <div class="header-info-item-profile">
+                  <img src="../../img/men.png" alt="" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <section class="mobile-menu">
+      <div>
+        <div class="mobile-menu-container">
+          <div class="mobile-menu-logo">
+            <a href="/"> <b>Find</b> <span>it</span> </a>
+          </div>
+          <input class="mobile-checkbox" type="checkbox" checked id="mobile-menu" />
+          <label for="mobile-menu"></label>
+        </div>
+      </div>
+    </section>
+
+    <section class="executor">
+      <div>
+        <div class="executor-container">
+          <h2>Стать исполнителем</h2>
+          <p>
+            Выполнять задания могут только совершеннолетние пользователи, которые прошли процедуру верификации. Мы
+            оставляем за собой право отказать в присвоении статуса исполнителя без объяснения причин.
+          </p>
+          <div class="executor-sides">
+            <div class="executor-main">
+              <form class="executor-main-form" action="javascript:" enctype="multipart/form-data">
+                <h4>Личные данные (как в паспорте)</h4>
+                <div class="executor-main-form-name">
+                  <label for="name">
+                    <span>Имя</span>
+                    <input type="text" id="name" />
+                  </label>
+                  <label for="surname">
+                    <span>Фамилия</span>
+                    <input type="text" id="surname" />
+                  </label>
+                  <label for="patronymic">
+                    <span>Отчество</span>
+                    <input type="text" id="patronymic" />
+                  </label>
+                </div>
+                <div class="executor-main-form-data">
+                  <b>Дата рождения</b>
+                  <div class="executor-main-form-data-items">
+                    <label for="data-day">
+                      <select name="day" id="data-day">
+                        <option value="0">день</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </label>
+                    <label for="data-month">
+                      <select name="month" id="data-month">
+                        <option value="0">Месяц</option>
+                        <option value="1">Январь</option>
+                        <option value="2">Февраль</option>
+                        <option value="3">Март</option>
+                        <option value="4">Апрель</option>
+                        <option value="5">Май</option>
+                        <option value="6">Июнь</option>
+                        <option value="7">Июль</option>
+                        <option value="8">Август</option>
+                        <option value="9">Сентябрь</option>
+                        <option value="10">Октябрь</option>
+                        <option value="11">Ноябрь</option>
+                        <option value="12">Декабрь</option>
+                      </select>
+                    </label>
+                    <label for="data-year">
+                      <select name="day" id="data-year">
+                        <option value="0">Год</option>
+                        <option value="1">1997</option>
+                        <option value="2">1999</option>
+                        <option value="3">1999</option>
+                        <option value="4">2000</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="executor-main-form-city">
+                  <b>Ваш город</b>
+                  <label for="city">
+                    <select name="city" id="city">
+                      <option value="1">Ташкент</option>
+                      <option value="2">Самарканд</option>
+                      <option value="3">Мармарис</option>
+                      <option value="4">Нью-йорк</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="executor-main-form-photo">
+                  <div class="executor-main-form-photo-image">
+                    <b>Фотография </b>
+                    <label class="photo-label" for="pct"></label>
+                    <input class="photo-input" type="file" id="pct" />
+                  </div>
+                  <div class="executor-main-form-photo-text">
+                    <p>
+                      Загрузите вашу фотографию (хорошее качество, лицо крупным планом). Профили без фото отклоняются во
+                      время проверки данных.
+                    </p>
+                    <p>Минимальный размер: 180×180 px.</p>
+                  </div>
+                </div>
+                <div class="executor-main-form-phone">
+                  <h4>Подтверждение телефона</h4>
+                  <p>На указанный номер мы отправим СМС с решением о присвоении вам статуса исполнителя</p>
+                  <div class="executor-main-form-phone-inputs">
+                    <label for="phone">
+                      <span>Телефон</span>
+                      <input id="phone" type="tel" maxlength="13" minlength="13" placeholder="+998" />
+                    </label>
+                    <a href="javascript:" class="btn-grey"><span>Подтвердить номер</span></a>
+                  </div>
+                  <div class="executor-main-form-phone-text">
+                    <img src="../../img/!.png" alt="!" />
+                    <p>
+                      Мы надежно храним личную информацию наших пользователей. Ваш номер телефона не попадает в открытый
+                      доступ и будет показываться только тем пользователям, которые выберут вас в качестве исполнителя
+                    </p>
+                  </div>
+                </div>
+                <div class="executor-main-form-categories">
+                  <h4>Отметьте категории, которые вам интересны</h4>
+                  <p>
+                    Мы надежно храним личную информацию наших пользователей. Ваш номер телефона не попадает в открытый
+                    доступ и будет показываться только тем пользователям, которые выберут вас в качестве исполнителя
+                  </p>
+                  <ul class="executor-main-form-categories-items">
+                    <li class="executor-main-form-categories-item">
+                      <input type="checkbox" id="main-checkboxes" />
+                      <label for="main-checkboxes">
+                        <span>Курьерские услуги</span>
+                      </label>
+                      <div class="executor-main-form-categories-item-inner">
+                        <ul class="executor-main-form-subCategories">
+                          <li class="executor-main-form-subCategory">
+                            <input type="checkbox" id="sub-one" />
+                            <label for="sub-one">Услуги курьера</label>
+                          </li>
+                          <li class="executor-main-form-subCategory">
+                            <input type="checkbox" id="sub-two" />
+                            <label for="sub-two">Первый</label>
+                          </li>
+                          <li class="executor-main-form-subCategory">
+                            <input type="checkbox" id="sub-three" />
+                            <label for="sub-three">Первый</label>
+                          </li>
+                          <li class="executor-main-form-subCategory">
+                            <input type="checkbox" id="sub-four" />
+                            <label for="sub-four">Первый</label>
+                          </li>
+                          <li class="executor-main-form-subCategory">
+                            <input type="checkbox" id="sub-five" />
+                            <label for="sub-five">Первый</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="executor-main-form-button">
+                  <button type="submit" class="btn-green">
+                    <span>Стать исполнителем</span>
+                  </button>
+                </div>
+                <div class="executor-main-form-text">
+                  <p>
+                    Нажимая «Готово», вы подтверждаете, что проходите верификацию на YouDo впервые, указали достоверную
+                    информацию о себе и соглашаетесь на обработку персональных данных.
+                  </p>
+                </div>
+              </form>
+            </div>
+            <div class="executor-side">
+              <div class="executor-side-notice">
+                <img src="../../img/notice-grey.png" alt="notice" />
+                <h3>Будьте внимательны!</h3>
+              </div>
+              <b>Проверьте указанные данные!</b>
+              <p>
+                Если предоставленная информация не будет соответствовать реальным паспортным данным, профиль может быть
+                заблокирован.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <div class="footer border-top">
+          <h2><a href="/">Find it</a></h2>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <a href="javascript:">Создать задание</a>
+            </li>
+            <li class="footer-link">
+              <a href="javascript:">Найти задания</a>
+            </li>
+            <li class="footer-link">
+              <a href="javascript:">Исполнители</a>
+            </li>
+            <li class="footer-link">
+              <a href="javascript:">Мои заказы</a>
+            </li>
+          </ul>
+          <ul class="footer-socials">
+            <li class="footer-social">
+              <a href="javascript:">
+                <img src="../../img/sections/socials/facebook.png" alt="soc" />
+              </a>
+            </li>
+            <li class="footer-social">
+              <a href="javascript:">
+                <img src="../../img/sections/socials/vk.png" alt="soc" />
+              </a>
+            </li>
+
+            <li class="footer-social">
+              <a href="javascript:">
+                <img src="../../img/sections/socials/od.png" alt="soc" />
+              </a>
+            </li>
+            <li class="footer-social">
+              <a href="javascript:">
+                <img src="../../img/sections/socials/twitter.png" alt="soc" />
+              </a>
+            </li>
+          </ul>
+          <p>©2019 Findit. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
