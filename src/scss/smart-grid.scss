@@ -7,6 +7,7 @@ $break_md: 960px;
 $break_lg: 1100px;
 
 $offset: 30px;
+$offset-portfolio: 20px;
 $offset_xs: 10px;
 $offset_sm: $offset;
 $offset_md: $offset;
@@ -90,6 +91,10 @@ $fields_xs: 15px;
 @mixin size($n) {
   $val: 100% / $columns * $n;
   width: #{calc(#{$val} - #{$offset})};
+}
+@mixin size-portfolio($n) {
+  $val: 100% / $columns * $n;
+  width: #{calc(#{$val} - #{$offset-portfolio})};
 }
 
 @mixin size-xs($n) {

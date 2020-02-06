@@ -5,10 +5,13 @@ select {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
+  outline: 0;
 }
+
 legend {
   color: #000;
 }
+
 article,
 aside,
 details,
@@ -23,55 +26,66 @@ section,
 button {
   z-index: 0;
 }
+
 input {
   z-index: 0;
 }
+
 main {
   display: block;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }
+
 h1 {
   text-align: left;
   font-size: 52px;
   font-weight: bold;
   color: #1A3E74;
-  @include xs-block(){
+  @include xs-block() {
     font-size: 40px;
   }
 }
+
 h2 {
   font-weight: bold;
   font-size: 46px;
   color: #1A3E74;
-  @include xs-block(){
+  @include xs-block() {
     font-size: 32px;
   }
 }
+
 h3 {
   font-weight: bold;
   font-size: 29px;
   color: #8FCC48;
-  }
+}
+
 h4 {
   font-size: 22px;
   color: #7C9CBB;
   opacity: 1;
 }
+
 //Colors
 
 //background
 .green {
   background: #8FCC48;
 }
+
 .blue {
   background: #39BFFB;
 }
+
 .yellow {
   background: #FEB627;
 }
@@ -82,3 +96,337 @@ h4 {
   overflow: hidden;
 }
 
+//buttons
+.btn-grey {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #bccbd9;
+  transition: all .5s;
+
+  &:hover {
+    box-shadow: 0 10px 15px #dce6f2;
+    cursor: pointer;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.btn-static {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #dce6f2;
+  background-color: #bccbd9;
+
+  &:hover {
+    box-shadow: 0 15px 25px rgba(152, 150, 150, 0.4);
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.btn-green {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #8fcc48;
+  transition: all .5s;
+
+  &:hover {
+    box-shadow: 0 15px 25px rgba(121, 177, 55, 0.4);
+    cursor: pointer;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.btn-white {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #dce6f2;
+  background-color: #ffffff;
+  transition: all .7s;
+
+  &:hover {
+    box-shadow: 0 5px 20px rgba(29, 29, 29, 0.4);
+    cursor: pointer;
+  }
+
+  span {
+    color: #7c9cbb;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.favourite-btn {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #dce6f2;
+  background-color: #ffffff;
+  transition: all .5s;
+  padding: 12px;
+
+  &:hover {
+    box-shadow: 0 15px 25px rgba(177, 177, 174, 0.4);
+    cursor: pointer;
+  }
+
+  span {
+    color: #1a3e74;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  img {
+    padding-right: 15px;
+  }
+}
+
+//Input
+
+input[type='text'] {
+  border: 1px solid #dce6f2;
+  border-radius: 35px;
+  padding-left: 24px;
+
+  &:focus {
+    border: 1px solid #2ab9f9;
+  }
+}
+::-webkit-input-placeholder {color:#bccbd9!important; opacity:1;}
+
+//select
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none !important;
+  width: 320px;
+  background: url("../img/arrow-blue.png") #ffffff no-repeat 95%;
+  background-size: 10px;
+  border-radius: 10px;
+  border: 1px solid #2ab9f9;
+  color: #7c9cbb;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 14px;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  @include xs-block() {
+    width: auto;
+    margin-right: 0;
+  }
+}
+
+//Stars
+.star {
+  width: 22px;
+  height: 22px;
+  background: url("../img/sections/findWork3/Star.png");
+  background-size: contain;
+  @include xs-block() {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.star-active {
+  width: 22px;
+  height: 22px;
+  background: url("../img/sections/findWork3/Star-shine.png");
+  background-size: contain;
+  @include xs-block() {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+//EndStars
+//Likes
+.likes-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+
+  p {
+    line-height: 24px;
+    color: #7c9cbb;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 6px;
+  }
+}
+
+.dislikes {
+  display: flex;
+  align-items: center;
+
+  p {
+    line-height: 24px;
+    color: #7c9cbb;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 6px;
+  }
+}
+
+//EndLikes
+.photo-label {
+  display: inline-block;
+  width: 134px;
+  height: 134px;
+  border: 1px dashed #bccbd9;
+  background: url("../img/Union_9.png") #fff;
+  background-size: auto;
+  border-radius: 15px;;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.photo-input {
+  display: none;
+}
+
+.download-img-label {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #dce6f2;
+  background-color: #fff;
+  transition: all .5s;
+  padding: 12px;
+}
+
+
+/*Key frames*/
+$animationDelay: 1;
+@for $i from 1 through 15 {
+  .projects div:nth-of-type(#{$i}) {
+    animation-delay: #{0.3+($i)/30}s;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*End Key frames*/
+
+
+/*Range slider*/
+.noUi-touch-area {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(33, 51, 74, 0.14);
+  border: 3px solid #ffffff;
+  background-color: #259be9;
+  outline: none;
+  position: relative;
+}
+
+.noUi-handle:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.noUi-handle:after {
+  display: none;
+}
+
+.noUi-handle {
+  border: none;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+  outline: 0 !important;
+  top: -14px;
+}
+.noUi-target {
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f8fbff;
+  opacity: 0.7;
+}
+
+.color-range {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  > div {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: flex-end;
+    > span {
+      position: absolute;
+      top: -4px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #259be9;
+      background-color: #f8fbff;
+      border-radius: 50%;
+    }
+  }
+  &-blue {
+    background-color: #c6e5fb;
+  }
+  &-green {
+    background-color: #d8edc8;
+  }
+  &-yellow {
+    background-color: #f8d95b;
+  }
+  &-orange {
+    background-color: #feb627;
+  }
+  &-red {
+    background-color: #fe8b27;
+  }
+
+}
+
+
+/*End range slider*/

@@ -1,0 +1,562 @@
+<% var data = {title: "Profile",author: "Tim"}; %><%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="bg-container">
+	<input type="checkbox" id="bg"/>
+	<label class="bg-btn" for="bg"></label>
+</div>
+<section class="profile">
+	<div>
+		<div class="profile-container">
+			<div class="profile-aside">
+				<div class="profile-aside-performer">
+					<a href="javascript:">
+						<img src="../../img/sections/findWork1/Star.svg" alt=""/>
+						<b>Хотите стать исполнителем?</b>
+					</a>
+				</div>
+				<div class="profile-aside-status">
+					<h4>Проверенный испонитель</h4>
+					<em>с 5 ноября 2019 г.</em>
+					<ul class="profile-aside-status-items">
+						<li class="profile-aside-status-item">
+							<div class="profile-aside-status-item-image">
+								<img src="../../img/sections/profile/Subtraction_1.png" alt="status"/>
+							</div>
+							<div class="profile-aside-status-item-text">
+								<b>Документы</b>
+								<p>Подтвержден паспорт</p>
+							</div>
+						</li>
+						<li class="profile-aside-status-item">
+							<div class="profile-aside-status-item-image">
+								<img src="../../img/sections/profile/Icon_awesome-phone.png" alt="status"/>
+							</div>
+							<div class="profile-aside-status-item-text">
+								<b>Телефон</b>
+								<p>Подтвержден</p>
+							</div>
+						</li>
+						<li class="profile-aside-status-item">
+							<div class="profile-aside-status-item-image">
+								<img src="../../img/sections/profile/Icon_material-email.png" alt="status"/>
+							</div>
+							<div class="profile-aside-status-item-text">
+								<b>Email</b>
+								<p>Подтвержден</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="profile-main">
+				<div class="profile-profile">
+					<div class="profile-profile-info">
+						<div class="profile-profile-img">
+							<img src="../../img/sections/profile/profile.png" alt="capture"/>
+							<div class="profile-profile-favourite">
+								<a class="favourite-btn" href="javascript:">
+									<img src="../../img/sections/profile/Icon_ionic-ios-heart.png" alt="img"/>
+									<span>В Избранное</span>
+								</a>
+							</div>
+						</div>
+						<div class="profile-profile-data">
+							<div class="profile-profile-data-name">
+								<b>Юлия Николаевна</b>
+							</div>
+							<div class="profile-profile-data-status">
+								<em>Онлайн</em>
+							</div>
+							<div class="profile-profile-data-places">
+								<p>г. Ташкент, Мирзо-Улугбекский район</p>
+								<p>27 лет</p>
+							</div>
+							<ul class="profile-profile-data-jobs">
+								<li class="profile-profile-data-job">
+									<b>Выполнено</b>
+									<p>108 заданий</p>
+								</li>
+								<li class="profile-profile-data-job">
+									<b>Создано</b>
+									<p>69 заданий</p>
+								</li>
+							</ul>
+							<ul class="profile-profile-data-awards">
+								<li class="profile-profile-data-award">
+									<img src="../../img/sections/profile/medal.png" alt="award"/>
+								</li>
+								<li class="profile-profile-data-award">
+									<img src="../../img/sections/profile/crown.png" alt="award"/>
+								</li>
+								<li class="profile-profile-data-award">
+									<img src="../../img/sections/profile/ТОП_50.png" alt="award"/>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="profile-profile-button">
+						<a class="btn-green" href="javascript:">
+							<span>Предложить задание</span>
+						</a>
+						<div class="profile-profile-button-status">
+							<img src="../../img/sections/profile/shield.png" alt="shield"/>
+							<p>Проверенный исполнитель</p>
+						</div>
+					</div>
+				</div>
+				<ul class="profile-menu-items">
+					<li rel="about" class="profile-menu-item "><span>Обо мне</span></li>
+					<li rel="examples" class="profile-menu-item"><span>Примеры работ</span></li>
+					<li rel="categories" class="profile-menu-item active-menu"><span>Категории</span></li>
+					<li rel="reviews" class="profile-menu-item"><span>Отзывы <img src="../../img/sections/profile/Ellipse_24.png" alt="rectangle"/></span>
+					</li>
+				</ul>
+				<ul class="profile-category-items">
+					<li rel="about" class="profile-category-item about">
+						<p>Очень аккуратная трудолюбивая приятная девушка, умею отрабатывать честно за свой заработок по
+							существу, порядочная семейная с высшим образованием! Без конфликтная и адекватная во всем!!!
+							У меня есть моя обученная команда, которая поможет вам во всех вопросах уборки. На задания
+							ездим по 1-й или же несколько человек с моей дружной команды!
+						</p>
+						<p>
+							Занимаемся уборками всех видов помещений. Влажная, сухая, генеральная, уборка после ремонта,
+							глажка белья, помощь в переезде под ноль, мойка окон, уборки производственных и сложных
+							помещений. Работаем на совесть. Если возникнут вопросы по заданию или же недочёты будут
+							готовы на решение вопроса на месте или же переделку. Готовы работать круглосуточно.
+							Обращайтесь, будем рады вам помочь.
+						</p>
+					</li>
+					<li rel="examples" class="profile-category-item examples ">
+						<ul class="profile-category-examples">
+							<li class="profile-category-example">
+								<div class="profile-category-example-image" rel="portfolio-first">
+									<img src="../../img/sections/profile/house_portfolio.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										3 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в квартире "Под ключ"</p>
+									<p>Стиль: Венеция</p>
+								</div>
+							</li>
+							<li class="profile-category-example">
+								<div class="profile-category-example-image" rel="portfolio-second">
+									<img src="../../img/sections/profile/flat.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										3 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в квартире "Под ключ"</p>
+									<p>Стиль: Венеция</p>
+								</div>
+							</li>
+							<li class="profile-category-example">
+								<div class="profile-category-example-image" rel="portfolio-third">
+									<img src="../../img/sections/profile/top.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										5 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в стиле Hi tech</p>
+								</div>
+							</li>
+							<li class="profile-category-example">
+								<div class="profile-category-example-image">
+									<img src="../../img/sections/profile/house_portfolio.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										3 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в квартире "Под ключ"</p>
+									<p>Стиль: Венеция</p>
+								</div>
+							</li>
+							<li class="profile-category-example">
+								<div class="profile-category-example-image">
+									<img src="../../img/sections/profile/flat.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										3 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в квартире "Под ключ"</p>
+									<p>Стиль: Венеция</p>
+								</div>
+							</li>
+							<li class="profile-category-example">
+								<div class="profile-category-example-image">
+									<img src="../../img/sections/profile/top.png" alt="img"/>
+									<b>
+										<img src="../../img/sections/profile/camera.png" alt="camera"/>
+										5 фото</b>
+								</div>
+								<div class="profile-category-example-text">
+									<p>Ремонт в стиле Hi tech</p>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li rel="categories" class="profile-category-item categories">
+						<ul class="profile-category-item-awards">
+							<li class="profile-category-item-award">
+								<h4>Курьерские услуги</h4>
+								<div class="profile-category-item-award-elements">
+									<div class="profile-category-item-award-element award-place-first">
+										<b>1 место</b>
+										<p>в рейтинге категории, в г. Ташкент (выполнено 9808 заданий)</p>
+									</div>
+									<div class="profile-category-item-award-element award-place-second">
+										<b>2 место</b>
+										<p>в общем рейтинге категории</p>
+									</div>
+									<ul class="profile-category-item-award-subCats">
+										<li class="profile-category-item-award-subCat">
+											<em>Услуги пешего курьера</em> <b>1 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Другая посылка</em> <b>2 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Срочная доставка</em> <b>1 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Курьер на день</em> <b>25 место</b>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="profile-category-item-award">
+								<h4>Уборка и помощь по хозяйству</h4>
+								<div class="profile-category-item-award-elements">
+									<div class="profile-category-item-award-element award-place-second">
+										<b>1 место</b>
+										<p>в рейтинге категории, в г. Ташкент (выполнено 9808 заданий)</p>
+									</div>
+									<div class="profile-category-item-award-element">
+										<b>58 место</b>
+										<p>в рейтинге категории, в г. Ташкент (выполнено 9808 заданий)</p>
+									</div>
+									<ul class="profile-category-item-award-subCats">
+										<li class="profile-category-item-award-subCat">
+											<em>Услуги пешего курьера</em> <b>1 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Другая посылка</em> <b>2 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Срочная доставка</em> <b>1 место</b>
+										</li>
+										<li class="profile-category-item-award-subCat">
+											<em>Курьер на день</em> <b>25 место</b>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li rel="reviews" class="profile-category-item reviews active-category">
+						<div class="profile-category-item-review">
+							<div class="profile-category-item-review-rating">
+								<div class="profile-category-item-review-rating-diagram">
+									<input type="text" value="40" class="dial" data-readOnly="true">
+									<div class="profile-category-item-review-rating-likes">
+										<div class="likes">
+											<p>8540</p>
+											<a href="javascript:">
+												<img src="../../img/sections/findWork3/like.png" alt="like">
+											</a>
+										</div>
+										<div class="dislikes">
+											<p>25</p>
+											<a href="javascript:">
+												<img src="../../img/sections/findWork3/dislike.png" alt="dislike">
+											</a>
+										</div>
+									</div>
+								</div>
+								<ul class="profile-category-item-review-rating-items">
+									<li class="profile-category-item-review-rating-item">
+										<div class="profile-category-item-review-rating-item-type">
+											<b>Качество</b>
+										</div>
+										<ul class="profile-category-item-review-rating-item-stars stars">
+											<li class="profile-category-item-review-rating-item-star star-active "></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star"></li>
+										</ul>
+									</li>
+									<li class="profile-category-item-review-rating-item">
+										<div class="profile-category-item-review-rating-item-type">
+											<b>Важность</b>
+										</div>
+										<ul class="profile-category-item-review-rating-item-stars stars">
+											<li class="profile-category-item-review-rating-item-star star-active "></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star"></li>
+										</ul>
+									</li>
+									<li class="profile-category-item-review-rating-item">
+										<div class="profile-category-item-review-rating-item-type">
+											<b>Цена</b>
+										</div>
+										<ul class="profile-category-item-review-rating-item-stars stars">
+											<li class="profile-category-item-review-rating-item-star star-active "></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star"></li>
+										</ul>
+									</li>
+									<li class="profile-category-item-review-rating-item">
+										<div class="profile-category-item-review-rating-item-type">
+											<b>Пунктуальность</b>
+										</div>
+										<ul class="profile-category-item-review-rating-item-stars stars">
+											<li class="profile-category-item-review-rating-item-star star-active "></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+										</ul>
+									</li>
+									<li class="profile-category-item-review-rating-item">
+										<div class="profile-category-item-review-rating-item-type">
+											<b>Адекватность</b>
+										</div>
+										<ul class="profile-category-item-review-rating-item-stars stars">
+											<li class="profile-category-item-review-rating-item-star star-active "></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star-active"></li>
+											<li class="profile-category-item-review-rating-item-star star"></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<ul class="profile-category-item-review-clients">
+								<li class="profile-category-item-review-client">
+									<div class="profile-category-item-review-client-info">
+										<div class="profile-category-item-review-client-img">
+											<img src="../../img/sections/profile/client.png" alt="img"/>
+										</div>
+										<div class="profile-category-item-review-client-name">
+											<b>Александра З.</b>
+											<div class="profile-category-item-review-client-review">
+												<em>Отзывы</em>
+												<div class="likes">
+													<p>4025</p>
+													<img src="../../img/sections/findWork3/like.png" alt="like"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-category-item-review-client-inner">
+										<div class="profile-category-item-review-client-data">
+											<div class="profile-category-item-review-client-data-top">
+												<div class="profile-category-item-review-client-data-top-text">
+													<img src="../../img/sections/profile/Done.png" alt="tap"/>
+													<p>Ролик для youtube готовка под ключ</p>
+													<em> - Выполнено</em>
+												</div>
+												<div class="profile-category-item-review-client-data-top-status">
+													<img src="../../img/sections/profile/card_.png" alt="img"/>
+													<p>Сделка без риска</p>
+												</div>
+											</div>
+											<div class="profile-category-item-review-client-bottom">
+												<b>Спасибо огромное за оперативность! Четко, быстро, вовремя!</b>
+												<ul class="profile-category-item-review-client-bottom-items">
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Качество:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Вежливость:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Цена:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="profile-category-item-review-client-time">
+											<p>Вчера 21:10</p>
+										</div>
+									</div>
+								</li>
+								<li class="profile-category-item-review-client">
+									<div class="profile-category-item-review-client-info">
+										<div class="profile-category-item-review-client-img">
+											<img src="../../img/sections/profile/client.png" alt="img"/>
+										</div>
+										<div class="profile-category-item-review-client-name">
+											<b>Александра З.</b>
+											<div class="profile-category-item-review-client-review">
+												<em>Отзывы</em>
+												<div class="likes">
+													<p>4025</p>
+													<img src="../../img/sections/findWork3/like.png" alt="like"/>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="profile-category-item-review-client-inner">
+										<div class="profile-category-item-review-client-data">
+											<div class="profile-category-item-review-client-data-top">
+												<div class="profile-category-item-review-client-data-top-text">
+													<img src="../../img/sections/profile/Done.png" alt="tap"/>
+													<p>Ролик для youtube готовка под ключ</p>
+													<em> - Выполнено</em>
+												</div>
+												<div class="profile-category-item-review-client-data-top-status">
+													<img src="../../img/sections/profile/card_.png" alt="img"/>
+													<p>Сделка без риска</p>
+												</div>
+											</div>
+											<div class="profile-category-item-review-client-bottom">
+												<b>Спасибо огромное за оперативность! Четко, быстро, вовремя!</b>
+												<ul class="profile-category-item-review-client-bottom-items">
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Качество:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Вежливость:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+													<li class="profile-category-item-review-client-bottom-item">
+														<em>Цена:</em>
+														<ul class="stars">
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star-active"></li>
+															<li class="star"></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="profile-category-item-review-client-time">
+											<p>Вчера 21:10</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="portfolio-modal" style="display: none">
+	<div class="portfolio-modal-container">
+		<div class="portfolio-modal-close">x</div>
+		<div class="portfolio-modal-elements">
+			<ul class="portfolio-modal-items">
+				<li class="portfolio-modal-item" rel="portfolio-first">
+					<div class="portfolio-modal-headlines">
+						<b>Ремонт в квартире "Под ключ"</b> <b>Стиль: Венеция</b>
+					</div>
+					<div class="portfolio-modal-text">
+						<p>Навела глянец: продезинфицирован и отчищен от прежних владельцев каждый уголочек квартиры,
+							включая мягкую мебель (даже химчистку не пришлось заказывать); финальная обработка
+							поверхностей гипоаллергенными средствами.
+						</p>
+						<p>Квартира пахнет свежестью и чистотой, с легким ароматом лимона)</p>
+					</div>
+					<ul class="portfolio-modal-inner-items">
+						<li class="portfolio-modal-inner-item">
+							<a href="../../img/sections/profile/house_portfolio.png" data-fancybox="images">
+								<img src="../../img/sections/profile/house_portfolio.png" alt="portfolio"/>
+							</a>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<a href="../../img/sections/profile/flat.png" data-fancybox="images">
+								<img src="../../img/sections/profile/flat.png" alt="portfolio"/>
+							</a>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<a href="../../img/sections/profile/top.png" data-fancybox="images">
+								<img src="../../img/sections/profile/top.png" alt="portfolio"/>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="portfolio-modal-item" rel="portfolio-second">
+					<div class="portfolio-modal-headlines">two</div>
+					<div class="portfolio-modal-text"></div>
+					<ul class="portfolio-modal-inner-items">
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/house_portfolio.png" alt="portfolio"/>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/flat.png" alt="portfolio"/>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/top.png" alt="portfolio"/>
+						</li>
+					</ul>
+				</li>
+				<li class="portfolio-modal-item" rel="portfolio-third">
+					<div class="portfolio-modal-headlines">three</div>
+					<div class="portfolio-modal-text"></div>
+					<ul class="portfolio-modal-inner-items">
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/house_portfolio.png" alt="portfolio"/>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/flat.png" alt="portfolio"/>
+						</li>
+						<li class="portfolio-modal-inner-item">
+							<img src="../../img/sections/profile/top.png" alt="portfolio"/>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

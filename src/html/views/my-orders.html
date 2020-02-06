@@ -1,0 +1,85 @@
+<% var data = {title: "FindWork1",author: "Tim"}; %>
+
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<div class="bg-container">
+	<input type="checkbox" id="bg"/>
+	<label class="bg-btn" for="bg"></label>
+</div>
+<section class="my-orders">
+  <div>
+    <div class="my-orders-container">
+      <div class="my-orders__title">
+        <h2 class="executor">Я исполнитель</h2> 
+        <h2 class="customer">Я заказчик</h2>
+      </div>
+      
+      <ul class="my-orders__items">
+        <li class="my-orders__item"><p>Открыты<span class="my-orders__mark open">2</span></p></li>
+        <li class="my-orders__item"><p>Завершены<span class="my-orders__mark complete">1</span></p></li>
+        <li class="my-orders__item"><p>Отменены</p></li>
+      </ul>
+
+      <div class="categories">
+        <h2 class="categories__title">Выберите категорию</h2>
+        <form>
+          <div class="select_wrap">
+            <select name="example">
+              <option value="">Пункт 1</option>
+              <option value="">Пункт 2</option>
+              <option value="">Пункт 3</option>
+              <option value="">Пункт 4</option>
+              <option value="">Пункт 5</option>
+            </select>
+
+            <select name="select" id="">
+              <option value="value1">Выбирите подкатегорию</option>
+              <option value="value2">Значение 2</option>
+              <option value="value3">Значение 3</option>
+            </select>
+            </div>
+        </form>
+      </div>
+
+      <div class="task">
+        <div class="task__wrap">
+          <div class="task__item">
+            <div class="task__content">
+              <h2 class="task__title">Переустановить windows, почистить ноутбук от пыли, установить игры</h2>
+              <span class="task__price">до 100 000 сум</span></div>
+            <p class="task__text">Ташкент, Чиланзарский район, Алгоритм 20
+              5 ноября, 12:07 — 5 ноября, 16:20</p>
+            <div class="deal">
+              <span class="deal__icon">
+                <img src="../../img/deal.png" alt="">
+              </span>
+              <p class="deal__text">Сделка без риска</p>
+            </div>
+          </div>
+
+          <div class="task__item">
+            <div class="task__content">
+              <h2 class="task__title">Переустановить windows, почистить ноутбук от пыли, установить игры</h2>
+              <span class="task__price">до 100 000 сум</span></div>
+            <p class="task__text">Ташкент, Чиланзарский район, Алгоритм 20
+              5 ноября, 12:07 — 5 ноября, 16:20</p>
+            <div class="deal">
+              <span class="deal__icon">
+                <img src="../../img/deal.png" alt="">
+              </span>
+              <p class="deal__text">Сделка без риска</p>
+            </div>
+          </div>
+        </div>
+        <div class="set_executor">
+          <a class="set_executor__link" href="/">
+            <img class="set_executor__star" src="../../img/sections/findWork1/Star.svg" alt="img">
+            <p class="set_executor__text">Хотите стать исполнителем?</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<%= _.template(require('./../includes/footer.html').default)(data) %>
+

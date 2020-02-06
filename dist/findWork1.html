@@ -9,7 +9,7 @@
 
     <title>FindWork1</title>
   </head>
-  <body class="tpl">
+  <body>
     <header>
       <div>
         <div class="header border-bottom">
@@ -65,10 +65,6 @@
       </div>
     </section>
 
-    <div class="bg-container">
-      <input type="checkbox" id="bg" />
-      <label class="bg-btn" for="bg"></label>
-    </div>
     <section class="find-job">
       <div>
         <div class="find-job-container">
@@ -174,6 +170,10 @@
             <div class="find-job-right">
               <div class="find-job-right-form">
                 <h3>Найти задание</h3>
+                <div class="filter-checked">
+                  <input type="checkbox" id="sideFilter-menu" checked />
+                  <label class="sideFilterMenu" for="sideFilter-menu">Фильтр по категориям</label>
+                </div>
                 <form action="javascript:">
                   <div class="find-job-right-form-search">
                     <input type="search" placeholder="Поиск по ключевым словам" />
@@ -185,12 +185,20 @@
                       <input type="text" placeholder="Чиланзарский район" />
                     </div>
                     <div class="find-job-right-form-inputs-radius">
-                      <span>Радиус поиска</span>
-                      <input type="text" placeholder="15 км" />
+                      <span>Радиус поиска (км)</span>
+                      <input
+                        type="text"
+                        placeholder="15 км"
+                        onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')"
+                      />
                     </div>
                     <div class="find-job-right-form-inputs-cost">
-                      <span>Стоимость задания</span>
-                      <input type="text" placeholder="сум" />
+                      <span>Стоимость задания (сум)</span>
+                      <input
+                        type="text"
+                        placeholder="сум"
+                        onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')"
+                      />
                     </div>
                   </div>
                   <ul class="find-job-right-form-checkboxes">
@@ -214,7 +222,140 @@
                 </form>
               </div>
               <div class="find-job-right-sort">
-                <ul class="find-job-right-sort-items"></ul>
+                <ul class="find-job-right-sort-items">
+                  <li class="find-job-right-sort-item-sort"><b>Сортировать:</b></li>
+                  <li class="find-job-right-sort-item-data">
+                    <a href="javascript:">По дате публикации</a>
+                  </li>
+                  <li class="find-job-right-sort-item-time">
+                    <a href="javascript:">По срочности</a>
+                  </li>
+                  <li class="find-job-right-sort-item-remote">
+                    <a href="javascript:">По удаленности</a>
+                  </li>
+                </ul>
+                <div class="find-job-right-sort-count">
+                  <p>542 задания</p>
+                </div>
+              </div>
+              <ul class="find-job-right-tasks">
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"
+                      ><b class="task">Переустановить windows, почистить ноутбук от пыли, установить игры</b></a
+                    >
+                    <p>Ташкент, Чиланзарский район, Алгоритм 20</p>
+                    <p>5 ноября, 12:07 — 5 ноября, 16:20</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:;">Александр В.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <img src="../../img/sections/findWork1/like.svg" alt="like" />
+                      <em>25</em>
+                    </div>
+                  </div>
+                </li>
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"><b class="task">Отремонтировать радиоприемник Supra pas-6955</b></a>
+                    <p>Удаленная работа</p>
+                    <p>Начать 6 ноября, 17:00</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:">Максим Д.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <p>Нет отзывов</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"><b class="task">Отремонтировать радиоприемник Supra pas-6955</b></a>
+                    <p>Удаленная работа</p>
+                    <p>Начать 6 ноября, 17:00</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:">Максим Д.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <p>Нет отзывов</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"><b class="task">Отремонтировать радиоприемник Supra pas-6955</b></a>
+                    <p>Удаленная работа</p>
+                    <p>Начать 6 ноября, 17:00</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:">Максим Д.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <p>Нет отзывов</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"><b class="task">Отремонтировать радиоприемник Supra pas-6955</b></a>
+                    <p>Удаленная работа</p>
+                    <p>Начать 6 ноября, 17:00</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:">Максим Д.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <p>Нет отзывов</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="find-job-right-task">
+                  <div class="find-job-right-task-left">
+                    <a href="javascript:"><b class="task">Отремонтировать радиоприемник Supra pas-6955</b></a>
+                    <p>Удаленная работа</p>
+                    <p>Начать 6 ноября, 17:00</p>
+                    <div class="find-job-right-task-left-type">
+                      <img src="../../img/sections/findWork1/card.png" alt="card" />
+                      <em>Сделка без риска</em>
+                    </div>
+                  </div>
+                  <div class="find-job-right-task-right">
+                    <b><span>до 100 000 </span>сум</b>
+                    <a href="javascript:">Максим Д.</a>
+                    <div class="find-job-right-task-right-likes">
+                      <p>Нет отзывов</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="find-job-right-button">
+                <div class="find-job-right-button-count">
+                  <p><span>50</span> из <span>542</span> задания</p>
+                </div>
+                <a href="javascript:"><span>Показать еще</span></a>
               </div>
             </div>
           </div>
